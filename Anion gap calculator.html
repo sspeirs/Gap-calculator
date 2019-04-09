@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<style>
+.jumbotron{background-color:#1c9dd9}
+.input-group-addon{padding-top: 10px;
+  margin-bottom: 0rem;
+  background-color: #eceeef;
+  border-radius: 0.3rem;
+  width: 60px;
+  text-align: center;}
+	</style>
+
+    <title>Inputgroups</title>
+  </head>
+  <body>
+
+	<p></p>
+	
+	<div class="container">
+	<div class="col-lg-6 col-md-6 col-sm-6 col-cs 12">
+	<h3>Anion gap calculator</h3>
+	</div>
+	<form class="form-horizontal">
+	
+	<div class="col-lg-3 col-md-3 col-sm-6 col-cs 12">
+	 <div class="input-group">
+	   <span class="input-group-addon">Na</span>
+	    <input id="Na" type="number"  class="form-control" placeholder="130-150 mmol/L" >
+		
+	</div></div></br> <!--End element 1-->
+	<div class="col-lg-3 col-md-3 col-sm-6 col-cs 12">
+	<div class="input-group">
+		<span class="input-group-addon">K</span>
+	    <input id ="K" type="number" class="form-control" placeholder="3.0-6.0 mmol/L" >
+	</div></div></br><!--End element 2-->
+	<div class="col-lg-3 col-md-3 col-sm-6 col-cs 12">
+	<div class="input-group">
+		<span class="input-group-addon">CI</span>
+	    <input id="CI" type="number"  class="form-control" placeholder="90-115 mmol/L" >
+	</div></div></br><!--End element 3-->
+	<div class="col-lg-3 col-md-3 col-sm-6 col-cs 12">
+	<div class="input-group">
+		<span class="input-group-addon">HCO3</span>
+	    <input id="HCO3" type="number" class="form-control" placeholder="18-35 mmol/L">
+	   </div></div> </br>
+	   <!-- end Element4 input-group -->
+	   
+	   
+	   	  <div class="row">
+	<div class="col-lg-3 col-md-3 col-sm-6 col-cs 12">	  
+  <div class="col-6"><div class="btn-group">
+	<button type="button" class="btn btn-warning" onclick="GetAnion()">Calculate</button>
+    <input class="btn btn-warning" type=button name=print value="Print" onClick="window.print()"></div>
+</div>
+</div>
+</div>
+</form>
+	  </div></br><!-- end row (now input-group-->
+
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-6 col-cs 12">
+<div class="jumbotron">
+<table>
+<tr><td style="padding: 5px;color: white; width:150px;">Anion Gap Results</td ><td></td><td></td></tr>
+<tr><td style="padding: 5px;color: white; " id="Resultk"></td><td></td></tr>
+<tr><td style="padding: 5px;color: white;" colspan="2" id="ResultAdvice"></td></tr>
+</table>
+
+</div><!-- End jumbotron-->
+</div><!-- End class row -->
+</div><!--End row-->
+
+</div><!-- End container for jumbotron-->
+
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, then own script -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script type="text/JavaScript" src="Anion-gap-calculator.js"></script>
+	
+  </body>
+</html>
